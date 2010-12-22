@@ -63,3 +63,11 @@ still can't import the cct.xsd.
 I don't really understand it. However, I suspect it's got something to
 do with the Java code that executes in the Thread context that may not
 know about jruby's Dir.chdir.
+
+Here's a [bug](http://jira.codehaus.org/browse/JRUBY-3300) on jruby's
+jira where Charles Nutter basically says JRuby doesn't chdir well, but
+the best case is to always chdir with full paths. However, the
+Dir.block is able to report the correct directory when asking
+Dir.pwd. Even when not in a block, Dir.pwd still seems to report the
+right directory. I think this is really a bug in Nokogiri's Java code
+not respecting JRuby's pwd.

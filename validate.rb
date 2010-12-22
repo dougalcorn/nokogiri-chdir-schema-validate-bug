@@ -31,6 +31,13 @@ puts "done."
 
 STDOUT.write "trying to validate with Dir.chdir... "
 Dir.chdir(File.dirname(PO_SCHEMA_FILE)) do |path|
+  STDOUT.write " (#{Dir.pwd}) "
   validate_with_rescue(xsd, doc)
 end
+puts "done."
+
+STDOUT.write "trying to validate with Dir.chdir and no block ... "
+Dir.chdir(File.dirname(PO_SCHEMA_FILE))
+STDOUT.write " (#{Dir.pwd}) "
+validate_with_rescue(xsd, doc)
 puts "done."
