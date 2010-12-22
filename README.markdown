@@ -2,7 +2,7 @@ This little project should demonstrate what I think is a bug in
 Nokogiri on jruby. The setup is validating a document against a schema
 that includes another schema. The included schema is specified with a
 schemaLocation that's a relative file path to the parent schema. This
-project was created as a test case of this [issue][https://github.com/tenderlove/nokogiri/issues/issue/389] on [tenderlove/nokogiri][https://github.com/tenderlove/nokogiri].
+project was created as a test case of this [issue](https://github.com/tenderlove/nokogiri/issues/issue/389) on [tenderlove/nokogiri](https://github.com/tenderlove/nokogiri).
 
 The xmllint from the libxml2 package can validate the document like
 so: 
