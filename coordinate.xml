@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<Coordinate xmlns="http://example.com/coordinates" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <X>1</X>
-  <Y>2</Y>
-  <Z>3</Z>
-</Coordinate>

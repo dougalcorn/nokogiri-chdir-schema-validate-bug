@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CCOMData xmlns="http://www.example.com/CCOM-ML" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  <Asset>
+    <SerialNumber>3Z84G32AA0-4</SerialNumber>
+  </Asset>
+</CCOMData>

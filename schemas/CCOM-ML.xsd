@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs            ="http://www.w3.org/2001/XMLSchema"
+           xmlns:cct           ="urn:un:unece:uncefact:documentation:standard:CoreComponentType:2"
+           xmlns               ="http://www.example.com/CCOM-ML"
+           targetNamespace     ="http://www.example.com/CCOM-ML"
+           elementFormDefault  ="qualified"
+           attributeFormDefault="unqualified">
+
+  <xs:import namespace="urn:un:unece:uncefact:documentation:standard:CoreComponentType:2" 
+             schemaLocation="cct.xsd"/>
+  
+  <xs:element name="CCOMData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Asset" type="Asset" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element> 
+  
+  <xs:complexType name="Asset">
+    <xs:sequence>
+      <xs:element name="SerialNumber" type="cct:IDType" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
